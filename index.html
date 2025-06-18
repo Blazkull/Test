@@ -97,7 +97,7 @@
             <label for="accept-permissions">Acepto los permisos</label>
         </div>
         <button type="submit">Enviar</button>
-        <div id="mensaje-de-estado"></div>
+        <div id="text-status"></div>
     </form>
     
 
@@ -106,8 +106,8 @@
         $('.action-form').on('submit', (e) => {
             e.preventDefault();
 
-            $('#mensaje-de-estado')
-                .text('Nombre enviado con exito!')
+            $('#text-status')
+                .text('Name send successfully!')
                 .css('color', '#20B520');
         });
     </script>
