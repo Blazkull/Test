@@ -18,7 +18,7 @@
             background-color: #f0f2f5; 
         }
 
-        .titule{
+        .titule {
             text-align: center;
             font-size: 40px;
         }
@@ -65,8 +65,6 @@
             color: #555;
         }
 
-
-     
         button {
             background-color: #007bff; 
             color: white;
@@ -101,6 +99,16 @@
         <button type="submit">Enviar</button>
     </form>
     <div id="mensaje-de-estado"></div>
-    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $('.action-form').on('submit', (e) => {
+            e.preventDefault();
+
+            $('#mensaje-de-estado')
+                .text('Nombre enviado con exito!')
+                .css('color', '#20B520');
+        });
+    </script>
 </body>
 </html>
